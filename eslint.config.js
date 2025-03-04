@@ -23,7 +23,9 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      //'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],    // 사용 안 한 것 빨간 줄
+      //'no-unused-vars': off,      // 사용 안 한 것 빨간 줄 안 함
+      'no-unused-vars': warn,       // 사용 안 한 것 노란 줄
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
