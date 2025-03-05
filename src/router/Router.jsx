@@ -3,6 +3,7 @@ import LottoPage from '@/ui/pages/LottoPage'
 import MainLayout from '../ui/layouts/MainLayout'
 import RspPage from '../ui/pages/RspPage'
 import BoardPage from '../ui/pages/BoardPage'
+import BoardPagingPage from '../ui/pages/BoardPagingPage'
 
 
 const routes = [
@@ -25,7 +26,7 @@ const routes = [
 
             {
                 path:'/boards',
-                element:<BoardPage />,
+                element:<BoardPagingPage />,
                 loader:() => '게시판',
             },
         ]
